@@ -1,0 +1,40 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}.${project.name}
+version: ${project.version}
+description: ${project.description}
+author: NerdsWBNerds
+url: ${project.url}
+softdepend: [Tools, Universal]
+commands:
+   buy:
+      description: Buy items from the market.
+      usage: /<command> <amount>
+   deposit:
+      description: Deposit gold into your bank.
+      usage: /<command> <amount | all>
+      aliases: [depo, d]
+   price:
+      description: Check pricing.
+      usage: /<command> <amount>
+      aliases: [pricecheck, checkprice]
+   sell:
+      description: Sell items on the market.
+      usage: /<command> <amount> <totalPrice>
+   selling:
+      description: Shows a list of your selling items.
+      usage: /<command>
+   withdraw:
+      description: Withdraw gold from your bank.
+      usage: /<command> <amount | all>
+      aliases: [with, w]
+   market:
+      description: Open market.
+      usage: /<command>
+      aliases: [mk, im, nm, nerdsmarket]
+   confirm:
+      description: Confirm pending offer.
+      usage: /<command>
+   cancel:
+      description: Cancel pending offer.
+      usage: /<command>
+      aliases: [deny]
